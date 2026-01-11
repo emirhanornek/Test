@@ -1,6 +1,6 @@
 services:
-  - type: web
-    name: groq-api
+  - type: worker
+    name: groq-discord-bot
     env: node
     plan: free
     buildCommand: npm install

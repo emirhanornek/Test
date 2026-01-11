@@ -20,9 +20,9 @@ client.once("ready", () => {
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  if (!message.content.startsWith("!prompt")) return;
+  if (!message.content.startsWith("!comfyui")) return;
 
-  const userPrompt = message.content.replace("!prompt", "").trim();
+  const userPrompt = message.content.replace("!comfyui", "").trim();
   if (!userPrompt) {
     return message.reply("Prompt yazmadın.");
   }
